@@ -14,9 +14,11 @@
                     <a class="nav-item nav-link text-light" href="{{url_for("contact")}}">Contact Us</a>
                 </div>
                 <!-- Navbar Right Side -->
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link text-light" href="{{url_for("slogin")}}">Login</a>
-                    <!--                    <a class="nav-item nav-link text-light" href="/">Register</a>-->
+                {% if session.logged_in %}
+                <a class="nav-item nav-link ml-auto text-light" href="{{url_for("slogout")}}">Logout</a>
+                {% else %}
+                <a class="nav-item nav-link ml-auto text-light" href="{{url_for("slogin")}}">Login</a>
+                {% endif %}
                 </div>
             </div>
         </div>

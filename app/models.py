@@ -2,20 +2,16 @@ from app import db,login_manager
 from flask_login import UserMixin
 
 
-@login_manager.user_loader()
-def load_user(get_id):
-    return Student.query.get(int(get_id))
-
-@login_manager.user_loader()
-def load_user(get_id):
-    return Admin.query.get(int(get_id))
+@login_manager.user_loader
+def load_user(user_id):
+    return Admin.query.get(int(user_id))
 
 
 
 class Admin(db.Model,UserMixin):
-    a_id = db.Column(db.Integer, primary_key=True)
-    fname = db.Column(db.String(20), nullable=False)
-    lname = db.Column(db.String(20), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    fname = db.Column(db.String(255), nullable=False)
+    lname = db.Column(db.String(255), nullable=False)
     # image = db.Column(db.String(20), nullable=False, default='default.jpg')
     email = db.Column(db.String(100), unique=True, nullable=False)
     mobile = db.Column(db.Integer, unique=True, nullable=False)
@@ -33,9 +29,10 @@ class Admin(db.Model,UserMixin):
 
 
 class Student(db.Model,UserMixin):
-    s_id = db.Column(db.Integer, primary_key=True)
-    fname = db.Column(db.String(20), nullable=False)
-    lname = db.Column(db.String(20), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    fname = db.Column(db.String(255), nullable=False)
+    lname = db.Column(db.String(255), nullable=False)
+    # enroll = db.Column(db.String(255),nullable=False, unique=True)
     # image = db.Column(db.String(20), nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
     mobile = db.Column(db.Integer, unique=True, nullable=False)
@@ -46,6 +43,7 @@ class Student(db.Model,UserMixin):
     def __init__(self, fname, lname, email, mobile, dob, address, password):
         self.fname = fname
         self.lname = lname
+        # self.enroll = enroll
         # self.image = image
         self.email = email
         self.mobile = mobile

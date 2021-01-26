@@ -10,21 +10,21 @@ from flask_login import login_user,logout_user,current_user
 students = [
     {
         'id':1,
-        'fname':'Hiren',
-        'lname': 'Thakkar',
-        'email': 'Hiren@123',
-        'mobile': 9054313421,
-        'dob': "05-06-200",
+        'fname':'Deven',
+        'lname': 'Panchal',
+        'email': 'Deven@123',
+        'mobile': 8401685623,
+        'dob': "04-07-2001",
         'address': 'dammy'
     },
     {
-        'id':1,
+        'id':2,
         'fname': 'Hiren',
         'lname': 'Thakkar',
         'email': 'Hiren@123',
         'mobile': 9054313421,
         'dob': "05-06-200",
-        'address': 'dammy'
+        'address': 'kaipan'
     }
 ]
 
@@ -81,12 +81,19 @@ def alogin():
     if request.method == "POST":
         admin = Admin.query.filter_by(email=form.email.data).first()
         if admin and bcrypt.check_password_hash(admin.password,form.password.data):
+            session['loged_in'] = True
+            session['email'] = form.email.data
             login_user(admin, remember=form.remember.data)
             return redirect(url_for("admin_panel"))
         else:
             flash("User is not found please enter valid email or password", 'danger')
     return render_template("admin/alogin.html", form=form, title="ALogin")
 
+#admin logout
+@app.route("/alogout")
+def alogout():
+    logout_user()
+    return redirect(url_for('alogin'))
 
 # Student Register Page
 @app.route("/sregister", methods=["GET", "POST"])
@@ -96,6 +103,7 @@ def sregister():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         student = Student(fname=form.fname.data,
                           lname=form.lname.data,
+                          # enroll=form.enroll.data,
                           email=form.email.data,
                           mobile=form.mobile.data,
                           dob=form.dob.data,
@@ -109,7 +117,6 @@ def sregister():
     return render_template("student/sregister.html", form=form, title="SRegister")
 
 
-
 # Student Login Page
 @app.route("/slogin", methods=["GET", "POST"])
 def slogin():
@@ -118,10 +125,20 @@ def slogin():
         student = Student.query.filter_by(email=form.email.data).first()
         if student and bcrypt.check_password_hash(student.password, form.password.data):
             login_user(student, remember=form.remember.data)
+            session['logged_in'] = True
+            session['email'] = form.email.data
             return redirect(url_for('home'))
         else:
-            flash("User is not found. Please check your email and password", "danger")
+            flash("User is not found. Please check your enroll-number and password", "danger")
     return render_template("student/slogin.html", form=form, title="SLogin")
+
+#student logout
+@app.route("/slogout")
+def slogout():
+    # logout_user()
+    session.clear()
+    flash("You are logged out!",'success')
+    return redirect(url_for('home'))
 
 
 # Student Corner Page
@@ -139,7 +156,7 @@ def contact():
 # student Admin Panel
 @app.route("/admin_panel")
 def admin_panel():
-    return render_template("layout/admin_layout.html",title="Admin")
+    return render_template("admin/dashbord.html",title="Admin")
 
 #Student Details
 @app.route("/sdetails")
