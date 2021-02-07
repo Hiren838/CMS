@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+
 body {
     background: #fafafa;
     color: #333333;
@@ -83,3 +87,501 @@ a.article-title:hover {
 .account-heading {
     font-size: 2.5rem;
 }
+/* --------------------------- /////////// II. PAGE PRELOADER /////////// --------------------------- */
+/* -Loading Screen- */
+#loader-wrapper {
+    background: #FFF;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 1050;
+}
+.loader-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    color: #222;
+    top: 25%;
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+#progress {
+    width: 0;
+    height: 2px;
+    background: #EF884B;
+    position: relative;
+    top: 30%;
+}
+.loader-text {
+    position: relative;
+    color: #222;
+    top: 35%;
+    font-size: 1.5rem;
+}
+
+/* -Loading Screen Animation- */
+.loaded {
+    -moz-transform: translate3d(0px, -100%, 0px);
+    -webkit-transform: translate3d(0px, -100%, 0px);
+    -o-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+    transform: translate3d(0px, -100%, 0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/***
+=============================================
+    Footer area style
+=============================================
+***/
+.footer-area {
+  background:grey none repeat scroll 0 0;
+  padding-bottom: 75px;
+  padding-top: 80px;
+}
+.single-footer-widget .footer-logo {
+  padding: 0 0 27px;
+}
+.single-footer-widget .interrio-info {
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+.single-footer-widget .interrio-info p {
+  margin: 0;
+}
+.single-footer-widget .interrio-info p span{
+  color: #FFCC00;
+  font-weight: 700;
+}
+.single-footer-widget .footer-contact-info {
+  overflow: hidden;
+}
+.single-footer-widget .footer-contact-info li {
+  border-bottom: 1px solid #242424;
+  margin-bottom: 7px;
+  padding-bottom: 9px;
+  padding-left: 30px;
+  position: relative;
+}
+.single-footer-widget .footer-contact-info li:last-child{
+  border-bottom: 0px solid #242424;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.single-footer-widget .footer-contact-info li .icon-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+.single-footer-widget .footer-contact-info li .icon-holder span:before{
+  color: black;
+  font-size: 20px;
+}
+.single-footer-widget .footer-contact-info li .icon-holder.time span::before {
+  top: 3px;
+  position: relative;
+}
+.single-footer-widget .footer-contact-info li .text-holder {}
+.single-footer-widget .footer-contact-info li .text-holder p {
+  margin: 0;
+  color: black;
+}
+
+.single-footer-widget .title {
+  padding-bottom: 40px;
+  padding-top: 6px;
+}
+.single-footer-widget .title h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.single-footer-widget .popular-news { }
+.single-footer-widget .popular-news .single-popular-news-item {
+  padding-left: 105px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.single-footer-widget .popular-news .single-popular-news-item:last-child{
+  margin-bottom: 0;
+}
+.single-footer-widget .popular-news .single-popular-news-item .img-holder {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.single-footer-widget .popular-news .single-popular-news-item .img-holder img{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.single-footer-widget .popular-news .single-popular-news-item .img-holder .overlay .box .content a i {
+  font-size: 16px;
+  transition: all 500ms ease 0s;
+  color: #fff;
+}
+.single-footer-widget .popular-news .single-popular-news-item:hover .img-holder .overlay{
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1,1);
+  transform: rotateY(0deg) scale(1,1);
+}
+.single-footer-widget .popular-news .single-popular-news-item:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.single-footer-widget .popular-news .single-popular-news-item .img-holder .overlay .box .content a:hover i{
+  color: #FFCC00;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder {
+  position: relative;
+  top: -8px;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder p {
+  color: #c1c1c1;
+  margin: 0 0 10px;
+ transition: all 500ms ease;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder .info {
+  overflow: hidden;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder .info li {
+  border-right: 1px solid#FFCC00;
+  display: inline-block;
+  float: left;
+  line-height: 15px;
+  margin-right: 10px;
+  padding-right: 10px;
+  color:#FFCC00;
+  transition: all 500ms ease;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder .info li:last-child{
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+.single-footer-widget .popular-news .single-popular-news-item .text-holder a:hover p{
+  color: #FFCC00;
+}
+
+
+.single-footer-widget .subscribe-form {
+  overflow: hidden;
+  position: relative;
+  top: -10px;
+}
+.single-footer-widget .subscribe-form p {
+  color: #c1c1c1;
+  margin: 0 0 11px;
+}
+.single-footer-widget .subscribe-form form {
+  position: relative;
+}
+.single-footer-widget .subscribe-form form input[type=text] {
+    background: #1e1e1e;
+    border: 1px solid #242424;
+    color: #c1c1c1;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 55px;
+    position: relative;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    width: 100%;
+}
+.single-footer-widget .subscribe-form form button {
+    background: #1e1e1e none repeat scroll 0 0;
+    border-left: 2px solid #242424;
+    color:#FFCC00;
+    display: block;
+    height: 50px;
+    padding: 10.5px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    width: 50px;
+    border-top: 1px solid #242424;
+    border-right: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+}
+.single-footer-widget .subscribe-form form input[type=text]:focus {
+    border: 1px solid #FFCC00;
+    background: #c1c1c1;
+    color: #1b1b1b;
+}
+.single-footer-widget .subscribe-form form input[type=text]:focus + button,
+.single-footer-widget .subscribe-form form button:hover {
+    background: #FFCC00 none repeat scroll 0 0;
+    color: #1b1b1b;
+    border-color:#FFCC00;
+}
+
+
+
+.single-footer-widget .subscribe-form h4 {
+  color: #c1c1c1;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 12px 0 10px;
+}
+
+.single-footer-widget .latest-project {}
+.single-footer-widget .latest-project .latest-project-items {
+  overflow: hidden;
+  margin-top: -5px;
+}
+.single-footer-widget .latest-project ul li {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.single-footer-widget .latest-project ul li .img-holder {
+  overflow: hidden;
+  position: relative;
+}
+.single-footer-widget .latest-project ul li .img-holder img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.single-footer-widget .latest-project ul li .img-holder .overlay .box .content a i {
+  font-size: 16px;
+  transition: all 500ms ease 0s;
+  color: #fff;
+}
+.single-footer-widget .latest-project ul li:hover .img-holder .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1,1);
+  transform: rotateY(0deg) scale(1,1);
+}
+.single-footer-widget .latest-project ul li:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.single-footer-widget .latest-project ul li .img-holder .overlay .box .content a:hover i {
+  color:#FFCC00;
+}
+
+/***
+=============================================
+    Footer bottom area style
+=============================================
+***/
+.footer-bottom-area {
+    background: #141414 none repeat scroll 0 0;
+    padding-bottom: 23px;
+    padding-top: 18px;
+}
+.footer-bottom-area .copyright-text p {
+    color: #c1c1c1;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.footer-bottom-area .copyright-text p a {
+    color: #FFCC00;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+.footer-bottom-area .copyright-text p a:hover{
+  color: #fff;
+}
+
+.footer-bottom-area .footer-menu {
+  float: right;
+  position: relative;
+  top: 3px;
+}
+.footer-bottom-area .footer-menu ul li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+.footer-bottom-area .footer-menu ul li a i{
+  color: black;
+  font-size: 16px;
+  transition: all 500ms ease;
+}
+.footer-bottom-area .footer-menu ul li a:hover i{
+  color:#007bff;
+}
+.fab:hover{
+color:#007bff;
+}
+ul{
+   list-style:none;
+}
+==============================================================
+.welcome{
+    width:298px;
+    height:268px
+}
+.sec-title {
+  margin-top: -5px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.sec-title h2 {
+  color: #252525;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sec-title h2 span{
+  color: #007bff;
+}
+.sec-title span.decor {
+  background: #007bff none repeat scroll 0 0;
+  height: 2px;
+  width: 78px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.sec-title span.decor:before{
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #007bff;
+  border-radius: 50%;
+  content: "";
+}
+=============================================
+    Welcome Area style
+=============================================
+***/
+.welcome-area {
+  padding-bottom: 140px;
+  padding-top: 100px;
+}
+.welcome-area .text-holder { }
+.welcome-area .text-holder h3{
+  color: #252525;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0 0 0px;
+}
+.welcome-area .text-holder .bottom {
+  margin-top: 30px;
+  padding-left: 215px;
+  position: relative;
+}
+.welcome-area .text-holder .bottom .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.welcome-area .text-holder .bottom .button a{
+  padding: 17px 30px 15px;
+}
+.welcome-area .text-holder .bottom .title h3 {
+  color: #252525;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  position: relative;
+  top: 10px;
+}
+.welcome-area .text-holder .bottom .title h3 span{
+  color: #007bff;
+  font-family: "OilBats";
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+
+.welcome-area .gallery {
+  position: relative;
+  margin-top: 5px;
+}
+.welcome-area .gallery .video-gallery {
+  width: 310px;
+  height: 280px;
+  text-align: center;
+  border: 6px solid #f7f7f7;
+  position: relative;
+  transition: border-color 0.4s ease 0s;
+  overflow: hidden;
+}
+.welcome-area .gallery .video-gallery img {
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.welcome-area .gallery .video-gallery .overlay-gallery {
+  background-color: transparent;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.4s ease 0s;
+}
+.welcome-area .gallery .video-gallery .overlay-gallery .icon-holder{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.welcome-area .gallery .video-gallery .overlay-gallery .icon-holder .icon{
+  display: table-cell;
+  vertical-align: middle;
+}
+.welcome-area .gallery .video-gallery .overlay-gallery .icon-holder .icon a img{
+  width: auto;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
+}
+.welcome-area .gallery .gallery-bg-img {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  z-index: -1;
+  margin-left: -25px;
+}
+
+.welcome-area .gallery .video-gallery:hover .overlay-gallery {
+  background-color: rgba(213, 172, 99, 0.70);
+}
+.welcome-area .gallery .video-gallery:hover img {
+  transform: scale(1.1);
+}
+.welcome-area .gallery .video-gallery .overlay-gallery .icon-holder .icon a:hover img{
+  transform: scale(1.1);
+}
+=====================================================================================
+
+

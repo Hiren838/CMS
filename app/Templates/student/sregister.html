@@ -18,6 +18,11 @@
                         {{render_field(form.lname,class="form-control",placeholder="Last-Name")}}
                         <div id="errLast"></div>
                     </div>
+                      <div class="form-group col-md-12 col-sm-12">
+<!--                        <input type="text" name="l_name" class="form-control" required placeholder=" Last-Name " id="txt " onkeyup="Validate(this)">-->
+                        {{render_field(form.enroll,class="form-control",placeholder="Enroll-Number")}}
+                        <div id="errLast"></div>
+                    </div>
 
                     <div class="form-group col-md-12 col-sm-12">
 <!--                        <input type="text" name="email" class="form-control " required placeholder="Email " id=" email" onchange="email_validate(this.value);">-->
@@ -50,7 +55,7 @@
 
                     <div class="text-center">
 <!--                    <p class="text-center"><button type="submit" value="Register" class="btn btn-success">Register</button></p>-->
-                    {{render_field(form.submit,class="btn btn-success")}}
+                    {{render_field(form.submit,class="btn btn-outline-success")}}
                     </div>
                 </form>
             </div>

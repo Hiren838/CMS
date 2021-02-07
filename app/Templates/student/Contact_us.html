@@ -1,4 +1,34 @@
 {% extends "layout/student_layout.html" %}
 {% block body %}
-<h1>Contact Us Page</h1>
+<section class="container-fluid section-space section-bg-2" id="contact">
+    <div class="row">
+        <div class="col-md-7 mb-4 mt-4 col-sm-6 common-res-bottom-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14664.304990356348!2d72.6551633!3d23.2403123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48d245a8f0271504!2sBholabhai%20Patel%20College%20of%20Computer%20Studies!5e0!3m2!1sen!2sin!4v1612603317261!5m2!1sen!2sin"
+                    width="750" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+        </div>
+    {%from "layout/formhelper.html" import render_field%}
+        <div class="col-md-5 col-sm-6 mt-4  content-section">
+            <div class="text-center mr-5 mt-5 ">
+                <h2 class="">Contact-Us </h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 form-group">
+                    {{render_field(form.name,class="form-control",placeholder="Name")}}
+                </div>
+                <div class="col-md-12 form-group">
+                    {{render_field(form.email,class="form-control",placeholder="Email")}}
+                </div>
+                <div class="col-md-12 form-group">
+                    {{render_field(form.mobile,class="form-control",placeholder="Mobile")}}
+                </div>
+                <div class="col-md-12 form-group">
+                   {{render_field(form.message,class="form-control",placeholder="Message",rows="3")}}
+                </div>
+                <div class="col-md-12 form-group text-center">
+                    {{render_field(form.submit,class="btn btn-primary",value="Contact")}}
+                </div>
+            </div>
+        </div>
+</section>
 {% endblock %}

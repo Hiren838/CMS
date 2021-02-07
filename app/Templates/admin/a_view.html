@@ -1,0 +1,75 @@
+{% extends 'layout/admin_layout.html' %}
+{% block body %}
+<div class="d-flex justify-content-center mt-4">
+    <div class="content-section">
+        <h1 class="text-center" data-widget="pushmenu">Admin Details</h1>
+        <hr/>
+
+        <table class=" table">
+            <div class="form-group">
+                <tr>
+                    <th scope="row">id :</th>
+                    <td scope="col">{{ admin.a_id }}</td>
+                </tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                    <th scope="row">Name :</th>
+                    <td scope="col">{{ admin.fname }} {{ admin.lname }}</td>
+
+                </tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                    <th scope="row">Email :</th>
+                    <td scope="col">{{ admin.email }}</td>
+                </tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                    <th scope="row">Mobile :</th>
+                    <td scope="col">{{ admin.mobile }}</td>
+                </tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                    <th scope="row">Address :</th>
+                    <td scope="col">{{ admin.address }}</td>
+                </tr>
+            </div>
+
+            <td><a href="{{url_for('aupdate',a_id= admin.a_id)}}" class="btn btn-success">Update</a></td>
+            <td>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#DeleteModal">Delete
+                </button>
+            </td>
+
+        </table>
+
+    </div>
+</div>
+<div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DeleteModelLabel">Delete Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are You Sure! You Want To Delete Student
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <form action="{{url_for('delete_admin', a_id=admin.a_id)}}" method="POST">
+                    <input class="btn btn-danger" type="submit" value="Delete">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

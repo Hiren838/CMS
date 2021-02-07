@@ -1,24 +1,42 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">B.P.Collage</a>
+            <a class="navbar-brand mr-5" href="{{url_for('home')}}"><img src="../static/img/logoo.png" width="50px"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link text-light" href="{{url_for("home")}}">Home</a>
-                    <a class="nav-item nav-link text-light" href="{{url_for("about")}}">About</a>
-                    <a class="nav-item nav-link text-light" href="{{url_for("scorner")}}">Student Corner</a>
-                    <a class="nav-item nav-link text-light" href="{{url_for("contact")}}">Contact Us</a>
+                    <a class="nav-item nav-link text-light" href="{{url_for('home')}}">Home</a>
+                    <a class="nav-item nav-link text-light" href="{{url_for('about')}}">About</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link  text-light" href="{{url_for('scorner')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student-Corner</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Attandance</a>
+                            <a class="dropdown-item" href="">Result</a>
+<!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="">Time Table</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link text-light" href="{{url_for('contact')}}">Contact-Us</a>
                 </div>
                 <!-- Navbar Right Side -->
-                {% if session.logged_in %}
-                <a class="nav-item nav-link ml-auto text-light" href="{{url_for("slogout")}}">Logout</a>
-                {% else %}
-                <a class="nav-item nav-link ml-auto text-light" href="{{url_for("slogin")}}">Login</a>
-                {% endif %}
+                <div class="navbar-nav">
+                    {% if current_user.is_authenticated %}
+                     <div class="nav-item dropdown">
+                        <a class="nav-link  text-light" href="" id="navbar-Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello {{ current_user.fname }}
+                        <i class="right fas fa-angle-down text-light" ></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url_for('saccount') }}">Account</a>
+                             <a class="dropdown-item" href="{{url_for('slogout')}}">Log Out</a>
+<!--                            <div class="dropdown-divider"></div>-->
+                        </div>
+                    </div>
+                    {% else %}
+                    <a class="nav-item nav-link text-light" href="{{url_for('slogin')}}">Login</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

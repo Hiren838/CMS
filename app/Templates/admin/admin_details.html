@@ -1,0 +1,41 @@
+{% extends "layout/admin_layout.html" %}
+{% block body %}
+<div class="form-group container mt-3 d-flex justify-content-center mt-3">
+    <a class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('aregister')}}">Add Faculty</a>
+</div>
+<table class=" table-sm table mt-2">
+  <thead class="" data-widget="pushmenu">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th></th>
+    </tr>
+  </thead>
+    {% for admin in admins.items %}
+  <tbody>
+    <tr>
+      <th scope="row">{{loop.index}}</th>
+      <td scope="row">{{ admin.fname }} {{ admin.lname }}</td>
+      <td scope="row">{{ admin.email }}</td>
+      <td scope="row">{{ admin.mobile }}</td>
+      <td><a href="{{url_for('aview',a_id=admin.a_id)}}" class="btn btn-info">View</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% for page_num in admins.iter_pages(left_edge=1,right_edge=1,left_current=1,right_current=2) %}
+{% if page_num %}
+{% if admins.page == page_num %}
+<a class="btn btn-info mb-4 ml-1" href="{{url_for('admin_details', page=page_num)}}">{{page_num}}</a>
+{% else %}
+<a class="btn btn-outline-info mb-4 ml-1" href="{{url_for('admin_details', page=page_num)}}">{{page_num}}</a>
+{% endif %}
+{% else %}
+...
+{% endif %}
+{% endfor %}
+
+
+{% endblock %}

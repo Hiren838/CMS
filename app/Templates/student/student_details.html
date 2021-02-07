@@ -1,37 +1,44 @@
 {% extends "layout/admin_layout.html" %}
 {% block body %}
-<div class="form-group container mt-3 d-flex justify-content-center mt-3">
-    <a class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('sregister')}}">Add Student</a>
+<div class="form-group mt-3 d-flex justify-content-center mt-3">
+    <a class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('sregister')}}">Add
+        Student</a>
 </div>
-<table class="main-header table-sm table ml-5 mt-2">
-  <thead class="" data-widget="pushmenu">
+<table class="table table-sm mt-2">
+    <thead class="" data-widget="pushmenu">
     <tr>
-      <th scope="col">id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">DOB</th>
-      <th></th>
-      <th></th>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">DOB</th>
+        <th></th>
     </tr>
-  </thead>
-    {% for student in students %}
-  <tbody>
+    </thead>
+    {% for student in students.items %}
+
+    <tbody>
     <tr>
-      <th scope="row">{{ student.id }}</th>
-      <td scope="row">{{ student.fname }} {{ student.lname }}</td>
-      <td scope="row">{{ student.email }}</td>
-      <td scope="row">{{ student.dob }}</td>
-      <td><a href="" class="btn btn-warning">Update</a></td>
-      <td>
-        <form method="post">
-        <input type="hidden" name="_method" value="DELETE">
-        <input type="submit" value="DELETE" class="btn btn-danger">
-        </form>
-      </td>
+        <th scope="row">{{loop.index}}</th>
+        <td scope="row">{{ student.fname }} {{ student.lname }}</td>
+        <td scope="row">{{ student.email }}</td>
+        <td scope="row">{{ student.dob }}</td>
+        <td><a href="{{url_for('sview',s_id=student.s_id)}}" class="btn btn-info">View</a></td>
+
 
     </tr>
     {% endfor %}
-  </tbody>
+    </tbody>
 </table>
+{% for page_num in students.iter_pages(left_edge=1,right_edge=1,left_current=1,right_current=2) %}
+{% if page_num %}
+{% if students.page == page_num %}
+<a class="btn btn-info mb-4 ml-1" href="{{url_for('student_details', page=page_num)}}">{{page_num}}</a>
+{% else %}
+<a class="btn btn-outline-info mb-4 ml-1" href="{{url_for('student_details', page=page_num)}}">{{page_num}}</a>
+{% endif %}
+{% else %}
+...
+{% endif %}
+{% endfor %}
 
 {% endblock %}

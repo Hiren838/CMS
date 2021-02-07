@@ -33,17 +33,17 @@
 <!--    <link rel="stylesheet" href="../static/css/custom.css">-->
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed  layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed  layout-footer-fixed" >
 
 {% include 'admin/admin_navbar.html' %} {% include 'admin/admin_slide.html' %}
-<main role="main" class="container">
+<main role="main" class=" main-header">
 <!--    <div class="row">-->
 <!--        <div class="col-md-12 ">-->
             {% include 'layout/message.html' %}
             {% block body%}{% endblock %}
-        </div>
+<!--        </div>-->
 
-    </div>
+<!--    </div>-->
 </main>
 <!--!&#45;&#45; jQuery &ndash;&gt;-->
 <script src="../static/plugins/jquery/jquery.min.js"></script>
@@ -79,6 +79,9 @@
 <script src="../static/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../static/dist/js/demo.js"></script>
+<!-- ajax live search  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,1492 @@
+
+/* Large Layout: 1200px. */
+@media only screen and (min-width: 1200px){
+.container {padding: 0;}
+.container-fluid{padding: 0;}    
+ 
+    
+}
+
+
+/* Medium screen  */ 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+/*** 
+=============================================
+    Top bar Area style
+=============================================
+***/       
+.top-bar-area .contact-info-right {
+  padding-left: 290px; 
+  margin-left: -60px;
+}    
+    
+/*** 
+=============================================
+    Header Area style
+=============================================
+***/     
+.header-area .outer-box {
+  padding-right: 0;
+}
+.header-area .outer-box .logo {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 0;
+}      
+.header-area.stricky-fixed .outer-box .logo {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 0;
+}  
+.header-area .outer-box .cart-btn {
+  right: 300px;
+}    
+.header-area .outer-box .search-box-btn {
+  right: 230px;
+}       
+.main-menu {
+  float: left;
+  width: 860px;
+}
+
+/*** 
+=============================================
+  Welcome Area style
+=============================================
+***/ 
+.welcome-area {
+  padding-bottom: 112px;
+}    
+.welcome-area .text-holder .bottom {
+  padding-left: 170px;
+}    
+.welcome-area .text-holder .bottom .button a {
+  padding: 17px 18px 15px;
+}
+.welcome-area .text-holder .bottom .title h3 {
+  font-size: 18px;
+}        
+.welcome-area .gallery .gallery-bg-img {
+  margin-left: -83px;
+} 
+    
+/*** 
+=============================================
+  Latest project Area style
+=============================================
+***/     
+.latest-project-area .project-filter li span::after {
+  margin: 0 10px 0 10px;
+}    
+    
+/*** 
+=============================================
+  Footer Area style
+=============================================
+***/  
+.single-footer-widget .latest-project ul li {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 73px;
+}    
+        
+/*** 
+=============================================
+    Testimonial Area style
+=============================================
+***/    
+.testimonials-carousel .single-slide-item .img-box {
+  width: 425px;
+}    
+.testimonials-carousel .single-slide-item .text-box {
+  padding-left: 75px;
+}    
+.testimonials-carousel .owl-dots {
+  margin-left: 110px;
+  margin-top: 10px;
+}    
+    
+/*** 
+=============================================
+    Slogan Area style
+=============================================
+***/ 
+.slogan-area .slogan {
+    padding: 0 30px;
+}    
+
+/*** 
+=============================================
+    Working Area style
+=============================================
+***/     
+.working-area .sec-title {
+    padding: 0 30px 40px;
+}
+    
+/*** 
+=============================================
+    Fact counter area style
+=============================================
+***/     
+.fact-counter-area .single-fact-counter .title h3 {
+  font-size: 16px;
+  font-weight: 600;
+}    
+
+/*** 
+=============================================
+    Faq content area style
+=============================================
+***/      
+.accordion-box {
+  padding: 80px 100px;
+}    
+.faq-content-area .question-form {
+  background: #f7f7f7 none repeat scroll 0 0;
+  padding: 70px 100px 100px;
+}
+    
+/*** 
+=============================================
+    Press Release Content Area style
+=============================================
+***/      
+.press-release-content-area .press-release-caption::after {
+  right: 20%;
+}
+    
+/*** 
+=============================================
+    Project Area style
+=============================================
+***/      
+#project-area .project-filter li span {
+  padding: 8px 22px;
+} 
+
+/*** 
+=============================================
+    Project Single v1 Area style
+=============================================
+***/    
+.project-single-v1-area #project-single-carousel {
+  margin-bottom: 60px;
+}    
+ 
+/*** 
+=============================================
+    Design Desc Area style
+=============================================
+***/      
+.design-desc-area .tab-manu .tab-manu-items .single-item a {
+  padding: 13px 25px 11px;
+}    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*** 
+=============================================
+    Top bar Area style
+=============================================
+***/
+.top-bar-area .contact-info-left {
+    padding-bottom: 10px;
+}    
+.top-bar-area .contact-info-left ul li {
+  display: block;
+  float: none;
+  margin-right: 0;
+  text-align: center;
+} 
+.top-bar-area .contact-info-right {
+  position: static;
+  padding-left: 0;
+  min-height: 32px;
+}
+.top-bar-area .contact-info-right .phnumber {
+  left: 15px;
+} 
+.top-social-links {
+  right: 15px;
+}
+.top-bar-area .contact-info-right .language-switcher {
+  left: 200px;
+}    
+        
+/*** 
+=============================================
+    Header Area style
+=============================================
+***/     
+.header-area .outer-box {
+  padding-right: 0;
+}
+.header-area .outer-box .logo {
+  width: 100%;
+  text-align: left;
+  padding: 40px 0 0;
+}
+.header-area.stricky-fixed .outer-box .logo {
+  padding: 40px 0 0;
+}      
+.header-area .outer-box .cart-btn {
+  right: 230px;
+}    
+.header-area .outer-box .search-box-btn {
+  right: 150px;
+}       
+.main-menu {
+  float: left;
+
+}
+.main-menu .navigation li a {
+  padding: 44px 15px 45px 0;
+}
+.header-area.stricky-fixed .main-menu .navigation li a {
+  padding: 29px 15px 30px 0;
+} 
+.main-menu .navigation > li.dropdown > a {
+  padding-right: 15px;
+}        
+.header-area.stricky-fixed .main-menu .navigation > li.dropdown > a {
+  padding-right: 15px;
+}    
+.main-menu .navigation > li.dropdown > a::after {
+  content: "";
+}    
+        
+/*** 
+=============================================
+    Welcome Area style
+=============================================
+***/ 
+.welcome-area {
+  padding-bottom: 150px;
+}    
+.welcome-area .gallery {
+  margin-top: 65px;
+  position: relative;
+  width: 570px;
+}    
+    
+/*** 
+=============================================
+  Latest project Area style
+=============================================
+***/     
+.latest-project-area .sec-title {
+  padding-bottom: 35px;
+}
+.latest-project-area .project-filter {
+  margin-bottom: 50px;
+}    
+    
+/*** 
+=============================================
+  Footer Area style
+=============================================
+***/     
+.single-footer-widget.pd-bottom {
+  padding-bottom: 50px;
+}    
+.single-footer-widget .popular-news .single-popular-news-item {
+  margin-bottom: 30px;
+  height: 80px;
+} 
+
+/*** 
+=============================================
+  Footer Bottom Area style
+=============================================
+***/      
+.footer-bottom-area .copyright-text p {
+  margin: 0 0 10px;
+  text-align: center;
+}    
+.footer-bottom-area .footer-menu {
+  float: none !important;
+  text-align: center;
+}     
+.footer-bottom-area .footer-menu ul li {
+  display: inline-block;
+  margin: 0 6px;
+}    
+
+/*** 
+=============================================
+    Testimonial Area style
+=============================================
+***/    
+.testimonials-carousel .single-slide-item .img-box, 
+.testimonials-carousel .single-slide-item .text-box {
+  display: block;
+}    
+.testimonials-carousel .single-slide-item .text-box {
+  padding-left: 0;
+  padding-top: 30px;
+}
+.testimonials-carousel .owl-dots {
+  margin-left: 0;
+  margin-top: 0;
+}    
+     
+/*** 
+=============================================
+    Slogan Area style
+=============================================
+***/ 
+.slogan-area .slogan {
+    padding: 0 30px;
+}    
+
+/*** 
+=============================================
+    Working Area style
+=============================================
+***/     
+.working-area .sec-title {
+    padding: 0 30px 40px;
+}
+        
+/*** 
+=============================================
+    About Interrio area style
+=============================================
+***/  
+.about-interrio-area .text-holder {
+  padding-bottom: 50px;
+}   
+.about-interrio-area .single-item.pdtop {
+  padding-top: 50px;
+}    
+    
+/*** 
+=============================================
+    Team area style
+=============================================
+***/
+.team-area .bottom-text {
+  padding: 41px 30px 0;
+}    
+    
+/*** 
+=============================================
+    Fact counter area style
+=============================================
+***/ 
+.fact-counter-area .fact-counter-carousel .single-item {
+  padding-bottom: 40px;
+} 
+.fact-counter-area .owl-controls {
+  bottom: -25px;
+}    
+.fact-counter-area .single-fact-counter {
+  padding-top: 50px;
+}    
+    
+    
+/*** 
+=============================================
+    Faq content area style
+=============================================
+***/      
+.accordion-box {
+  padding: 80px 100px;
+}    
+.faq-content-area .question-form {
+  background: #f7f7f7 none repeat scroll 0 0;
+  padding: 70px 100px 100px;
+}
+    
+/*** 
+=============================================
+    Press Release Content Area style
+=============================================
+***/ 
+.press-release-content-area .press-release-caption {
+  padding-left: 0px;
+  padding-top: 40px;
+}
+.press-release-content-area .press-release-caption::after {
+  content: "";
+}
+.press-release-content-area .press-release-caption::before {
+  content: "";
+}
+.press-release-content-area .text {
+  padding-left: 0;
+}        
+.press-release-content-area .client-info {
+  padding-left: 0;
+} 
+
+/*** 
+=============================================
+    Blog With Sidebar Area style
+=============================================
+***/     
+.blog-with-sidebar-area .blog-post {
+  border-right: medium none;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 80px;
+  padding-right: 0;
+  padding-top: 0;
+}    
+
+/*** 
+=============================================
+    Blog Standard Area style
+=============================================
+***/ 
+.blog-standard-area .single-blog-item .text-holder {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}    
+.blog-standard-area .single-blog-item .text-holder .blog-title {
+  font-size: 17px;
+}    
+
+/*** 
+=============================================
+    Blog Single Area style
+=============================================
+***/     
+.blog-single-area .blog-post {
+  padding-bottom: 80px;
+}    
+    
+/*** 
+=============================================
+    Contact v1 Area style
+=============================================
+***/ 
+.contact-v1-area {
+  padding-bottom: 100px;
+  padding-top: 80px;
+}    
+.contact-v1-area .sec-title {
+  padding: 0 20px 40px;
+} 
+    
+/*** 
+=============================================
+    Contact v2 Area style
+=============================================
+***/
+.contact-v2-form-area {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}    
+.contact-v2-area .google-map-area {
+  padding-top: 65px;
+}    
+.contact-v2-form-area .sec-title {
+  padding: 0 40px 40px;
+}    
+    
+/*** 
+=============================================
+    Project Area style
+=============================================
+***/ 
+#project-area .project-filter {
+  margin-bottom: 50px;
+}    
+#project-area .project-filter li {
+  margin: 0 3px 10px;
+}        
+#project-area .project-filter li span {
+  padding: 8px 22px;
+} 
+
+/*** 
+=============================================
+    Project Single v1 Area style
+=============================================
+***/    
+.project-single-v1-area #project-single-carousel {
+  margin-bottom: 60px;
+}    
+ 
+/*** 
+=============================================
+    Checkout Area style
+=============================================
+***/            
+.checkout-area .billing-info {
+  overflow: hidden;
+  padding-bottom: 70px;
+}    
+.checkout-area .table {
+  padding-bottom: 70px;
+}    
+
+/*** 
+=============================================
+    Account Area style
+=============================================
+***/     
+.account-area .login-form {
+  overflow: hidden;
+  padding-bottom: 60px;
+} 
+    
+/*** 
+=============================================
+    Shop withsidebar Area style
+=============================================
+***/      
+.shop-withsidebar-area .shop-items {
+  border-right: medium none;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 70px;
+  padding-right: 0;
+  padding-top: 0;
+}    
+    
+/*** 
+=============================================
+    Shopping Cart Area style
+=============================================
+***/  
+#shopping-cart-area .sidebar-wrapper {
+  border-left: medium none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 80px;
+}    
+    
+/*** 
+=============================================
+    Shop single area style
+=============================================
+***/      
+.shop-single-area .single-products-details{
+  border-right: 0px solid #f7f7f7;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-top: 0px;    
+}    
+.product-content-box .content-box {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+
+/*** 
+=============================================
+    Slogan V2 Area Style
+=============================================
+***/    
+.slogan-v2-area .slogan-v2 .button a {
+  margin: 35px 0;
+}
+    
+/*** 
+=============================================
+    Design Desc Area style
+=============================================
+***/    
+.design-desc-area .tab-manu {
+  padding-bottom: 50px;
+}    
+.design-desc-area .tab-manu .tab-manu-items .single-item {
+  margin: 0 2px 10px;
+}    
+.design-desc-area .tab-manu .tab-manu-items .single-item a {
+  padding: 13px 25px 11px;
+}    
+.design-desc-area .tab-content .inner-content .text-holder {
+  padding-top: 45px;
+}    
+            
+/*** 
+=============================================
+    Appoinment Area style
+=============================================
+***/      
+.appoinment-area .sec-title {
+  float: none !important;
+  padding-bottom: 36px;
+}    
+    
+/*** 
+=============================================
+    Pricing Table Area style
+=============================================
+***/
+.pricing-table-area {
+  padding-bottom: 60px;
+  padding-top: 100px;
+}    
+.pricing-table-area .single-price-box {
+  margin-bottom: 40px;
+}    
+    
+ 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+/*** 
+=============================================
+    Top bar Area style
+=============================================
+***/
+.top-bar-area .contact-info-left {
+    padding-bottom: 10px;
+}    
+.top-bar-area .contact-info-left ul li {
+  display: block;
+  float: none;
+  margin-right: 0;
+  text-align: center;
+}   
+.top-bar-area .contact-info-right {
+  position: static;
+  padding-left: 0px;
+  margin-left: 0;
+  min-height: 32px;
+}    
+.top-bar-area .contact-info-right .phnumber {
+  position: static;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.top-social-links {
+  position: relative;
+  right: 0;
+  top: 2px;
+  width: 160px;
+  margin: 0 auto;
+}    
+.top-bar-area .contact-info-right .language-switcher {
+  left: 0;
+  position: relative;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+} 
+       
+/*** 
+=============================================
+    Header Area style
+=============================================
+***/  
+.header-area.stricky-fixed {
+  position: static;
+}    
+.header-area .outer-box {
+  padding-right: 0;
+}
+.header-area .outer-box .logo {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 10px;
+}  
+.header-area .outer-box .cart-btn {
+  top: 112px;
+  left: 0;
+  z-index: 6;
+}   
+.header-area .outer-box .search-box-btn {
+  right: 0;
+  top: 35px;
+}       
+        
+.main-menu {
+  display: inline-block;
+  float: right !important;
+  padding-bottom: 0;
+  padding-top: 0;
+  z-index: 5;
+  width: 100%;
+}
+.main-menu .navigation li {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}   
+.main-menu .collapse {
+  border: 1px solid #cb9a43 !important;
+  border-radius: 3px !important;
+  float: none;
+  margin: 0;
+  max-height: 300px;
+  overflow: auto;
+  padding: 0;
+  width: 100%;
+}    
+.main-menu .collapse.in, 
+.main-menu .collapsing {
+  border: 1px solid #4b4b4b;
+  border-radius: 3px;
+  margin: 0 0 20px;
+  padding: 0;
+  border-top: none;
+}    
+.main-menu .navbar-header{
+  position:relative;
+  float:none;
+  display:block;
+  text-align:right;
+  width:100%;
+  padding:15px 0px;
+  right:0px;
+  z-index:12;
+}        
+.main-menu .navbar-header .navbar-toggle{
+  display:inline-block;
+  z-index:7;
+  border: 2px solid #d5ac63;
+  float:none;
+  margin:0px;
+}       
+.main-menu .navbar-header .navbar-toggle .icon-bar {
+  background: #d5ac63 none repeat scroll 0 0;
+  font-weight: 700;
+}
+    
+        
+.main-menu .navbar-collapse > .navigation {
+  background: #d5ac63;
+  float: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+}        
+.main-menu .navbar-collapse > .navigation > li{
+  margin:0px !important;
+  float:none !important;
+  width:100%;
+  padding: 0;
+}  
+.main-menu .navigation li.dropdown > a:after{
+  display:none !important;
+} 
+.main-menu .navbar-collapse > .navigation > li > a{
+  padding:10px 10px !important;
+}    
+    
+
+    
+.main-menu .navbar-collapse > .navigation > li > ul,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul{
+  position:relative;
+  border:none;
+  float:none;
+  visibility:visible;
+  opacity:1;
+  display:none;
+  margin:0px;
+  left:auto !important;
+  right:auto !important;
+  top:auto !important;
+  width:100%;
+  background: none;
+  border-radius:0px;
+  -webkit-border-radius:0px;
+  -ms-border-radius:0px;
+  -o-border-radius:0px;
+  -moz-border-radius:0px;
+  transition:none !important;
+  -webkit-transition:none !important;
+  -ms-transition:none !important;
+  -o-transition:none !important;
+  -moz-transition:none !important;
+}    
+.main-menu .navbar-collapse > .navigation > li > ul,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul{
+  border-top: 0px solid rgba(255,255,255,1) !important;	
+}
+    
+.main-menu .navbar-collapse > .navigation > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li{
+  border-top: 1px solid #4b4b4b !important;
+  opacity:1 !important;
+  top:0px !important;
+  left:0px !important;
+  visibility:visible !important;
+}
+.main-menu .navbar-collapse > .navigation > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
+  padding:10px 10px !important;
+  line-height:22px;
+  color:#ffffff;
+  background:#d5ac63;
+  text-align:left;
+}    
+    
+    
+.main-menu .navbar-collapse > .navigation > li > a:hover,
+.main-menu .navbar-collapse > .navigation > li > a:active,
+.main-menu .navbar-collapse > .navigation > li > a:focus{
+  background:#1b1b1b;
+} 
+.main-menu .navbar-collapse > .navigation > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li.current > a{
+  background:#1b1b1b;
+  color:#ffffff !important;
+}        
+.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
+  display:block;
+}
+
+/*** 
+=============================================
+    Welcome Area style
+=============================================
+***/ 
+.welcome-area {
+  padding-bottom: 100px;
+  padding-top: 100px;
+} 
+.welcome-area .text-holder .bottom {
+  padding-left: 0;
+}    
+.welcome-area .text-holder .bottom .title h3 {
+  position: relative;
+  top: 70px;
+}    
+.welcome-area .gallery {
+  margin: 100px auto 0;
+  width: 310px;
+}
+.welcome-area .gallery .video-gallery {
+ z-index: 1;
+}
+.welcome-area .gallery .gallery-bg-img {
+  margin-left: 0;
+  position: static;
+  z-index: -1;
+  margin-top: -60px;
+}       
+    
+/*** 
+=============================================
+  Latest project Area style
+=============================================
+***/     
+.latest-project-area .sec-title {
+  padding-bottom: 35px;
+  margin-left: -20px;
+}    
+.latest-project-area .project-filter {
+  margin-bottom: 50px;
+}    
+.latest-project-area .project-filter li span::after {
+  margin: 0 10px 0 10px;
+}    
+        
+/*** 
+=============================================
+  Latest Blog Area style
+=============================================
+***/
+.latest-blog-area .sec-title {
+  padding-bottom: 35px;
+  float: none !important;
+} 
+.latest-blog-area .more-blog-button {
+  float: none !important;
+  padding-bottom: 40px;
+  display: block;
+  overflow: hidden;
+}
+        
+/*** 
+=============================================
+  Footer Area style
+=============================================
+***/     
+.single-footer-widget.pd-bottom {
+  padding-bottom: 50px;
+}    
+.single-footer-widget .popular-news .single-popular-news-item {
+  margin-bottom: 30px;
+  height: 80px;
+} 
+    
+/*** 
+=============================================
+  Footer Bottom Area style
+=============================================
+***/        
+.footer-bottom-area .copyright-text p {
+  margin: 0 0 10px;
+  text-align: center;
+}    
+.footer-bottom-area .footer-menu {
+  float: none !important;
+  text-align: center;
+}     
+.footer-bottom-area .footer-menu ul li {
+  display: inline-block;
+  margin: 0 12px;
+}    
+    
+/*** 
+=============================================
+    Testimonial Area style
+=============================================
+***/    
+.testimonials-carousel .single-slide-item .img-box, 
+.testimonials-carousel .single-slide-item .text-box {
+  display: block;
+}
+.testimonials-carousel .single-slide-item .img-box {
+  width: 80%;
+}    
+.testimonials-carousel .single-slide-item .text-box {
+  padding-left: 0;
+  padding-top: 30px;
+}
+.testimonials-carousel .owl-dots {
+  margin-left: 0;
+  margin-top: 0;
+}    
+     
+/*** 
+=============================================
+    Slogan Area style
+=============================================
+***/ 
+.slogan-area .slogan {
+    padding: 0 30px;
+}
+.slogan-area .slogan h2 {
+  transform: none;
+} 
+.slogan-area .slogan:hover h2 {
+  color: none;
+} 
+
+/*** 
+=============================================
+    Working Area style
+=============================================
+***/     
+.working-area .sec-title {
+    padding: 0 30px 40px;
+}
+        
+/*** 
+=============================================
+    About Interrio area style
+=============================================
+***/  
+.about-interrio-area .text-holder {
+  padding-bottom: 50px;
+}   
+.about-interrio-area .single-item.pdtop {
+  padding-top: 50px;
+}    
+.about-interrio-area .text-holder .signature-and-name .signature, 
+.about-interrio-area .text-holder .signature-and-name .name {
+  display: block;
+}              
+.about-interrio-area .text-holder .signature-and-name .signature {
+  margin: 0 0 15px;
+}
+    
+/*** 
+=============================================
+    Team area style
+=============================================
+***/
+.team-area .bottom-text {
+  padding: 41px 10px 0;
+}    
+
+/*** 
+=============================================
+    Slogan-area.bg-clr-1 style
+=============================================
+***/    
+.slogan-area.bg-clr-1 .slogan {
+  padding: 0 10px;
+} 
+    
+/*** 
+=============================================
+    Fact counter area style
+=============================================
+***/ 
+.fact-counter-area .fact-counter-carousel .single-item {
+  padding-bottom: 40px;
+} 
+.fact-counter-area .owl-controls {
+  bottom: -25px;
+}    
+.fact-counter-area .single-fact-counter {
+  padding-top: 50px;
+}    
+    
+/*** 
+=============================================
+    Not found area style
+=============================================
+***/    
+.not-found-content .search-form {
+  width: 300px;
+}
+.not-found-content .search-form input[type="text"] {
+  width: 300px;
+}    
+    
+/*** 
+=============================================
+    Faq content area style
+=============================================
+***/      
+.accordion-box {
+  padding: 80px 0;
+} 
+.faq-content-area .question-form {
+  background: #f7f7f7 none repeat scroll 0 0;
+  padding: 70px 15px 100px;
+}
+        
+/*** 
+=============================================
+    Press Release Content Area style
+=============================================
+***/ 
+.press-release-content-area .press-release-caption {
+  padding-left: 0px;
+  padding-top: 40px;
+}
+.press-release-content-area .press-release-caption::after {
+  content: "";
+}
+.press-release-content-area .press-release-caption::before {
+  content: "";
+}
+.press-release-content-area .text {
+  padding-left: 0;
+}        
+.press-release-content-area .client-info {
+  padding-left: 0;
+}            
+
+/*** 
+=============================================
+    Breadcrumb Area style
+=============================================
+***/ 
+.breadcrumb-area .breadcrumb-bottom {
+  height: 70px;
+}    
+.breadcrumb-area .breadcrumb-bottom .left {
+  float: none !important;
+} 
+.breadcrumb-area .breadcrumb-bottom .left ul {
+  line-height: 20px;
+}    
+.breadcrumb-area .breadcrumb-bottom .right {
+  float: none !important;
+  line-height: 22px;
+}  
+    
+/*** 
+=============================================
+    Blog With Sidebar Area style
+=============================================
+***/     
+.blog-with-sidebar-area .blog-post {
+  border-right: medium none;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 80px;
+  padding-right: 0;
+  padding-top: 0;
+}      
+.blog-with-sidebar-area .blog-post .single-blog-item .text-holder {
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}    
+.blog-with-sidebar-area .blog-post .single-blog-item .text-holder .text .bottom .readmore {
+  float: none !important;
+  overflow: hidden;
+  padding: 0;
+}    
+.blog-with-sidebar-area .blog-post .single-blog-item .text-holder .text .bottom .share {
+  float: none !important;
+  margin-top: 27px;
+}    
+    
+/*** 
+=============================================
+    Blog Single Area style
+=============================================
+***/     
+.blog-single-area .blog-post {
+  padding-bottom: 80px;
+}    
+.blog-single-area .middle-content-box .img-holder, .blog-single-area .middle-content-box .text-holder {
+  display: block;
+}    
+.blog-single-area .middle-content-box .text-holder {
+  padding-left: 0;
+  padding-top: 45px;
+}    
+.blog-single-area .middle-content-box .text-holder::before {
+  left: 0;
+  top: 15px;
+}    
+.blog-single-area .tag-social-share-box .social-share {
+  float: left !important;
+  margin-top: 10px;
+}    
+.blog-single-area .sidebar-wrapper {
+  padding-left: 0;
+}    
+ 
+/*** 
+=============================================
+    Contact v1 Area style
+=============================================
+***/ 
+.contact-v1-area {
+  padding-bottom: 100px;
+  padding-top: 80px;
+}    
+.contact-v1-area .sec-title {
+  padding: 0 20px 40px;
+} 
+        
+/*** 
+=============================================
+    Contact v2 Form area style
+=============================================
+***/
+.contact-v2-form-area {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}    
+.contact-v2-area .google-map-area {
+  padding-top: 65px;
+}    
+.contact-v2-form-area .sec-title {
+  padding: 0 10px 40px;
+}    
+.contact-v2-area .contact-info.pd-bottom {
+  padding-top: 60px;
+}    
+    
+/*** 
+=============================================
+    Project Area style
+=============================================
+***/ 
+#project-area .project-filter {
+  margin-bottom: 50px;
+}    
+#project-area .project-filter li {
+  margin: 0 3px 10px;
+}        
+#project-area .project-filter li span {
+  padding: 8px 22px;
+} 
+    
+/*** 
+=============================================
+    Pro Grid Area style
+=============================================
+***/ 
+#project-grid-area .project-filter li{
+  margin: 0 7px;    
+}        
+#project-grid-area .project-filter li span::after {
+  color: #eaeaea;
+  content: "";
+  display: inline-block;
+  margin: 0px;
+}    
+    
+/*** 
+=============================================
+    Project Single v1 Area style
+=============================================
+***/    
+.project-single-v1-area #project-single-carousel {
+  margin-bottom: 60px;
+}    
+ 
+/*** 
+=============================================
+    Checkout Area style
+=============================================
+***/            
+.checkout-area .billing-info {
+  overflow: hidden;
+  padding-bottom: 70px;
+}    
+.checkout-area .table {
+  padding-bottom: 70px;
+}    
+       
+/*** 
+=============================================
+    Account Area style
+=============================================
+***/     
+.account-area .login-form {
+  overflow: hidden;
+  padding-bottom: 60px;
+} 
+        
+/*** 
+=============================================
+    Shop withsidebar Area style
+=============================================
+***/      
+.shop-withsidebar-area .shop-items {
+  border-right: medium none;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 70px;
+  padding-right: 0;
+  padding-top: 0;
+}    
+.showing-result-shorting .shorting {
+  float: left !important;
+}    
+
+/*** 
+=============================================
+    Shopping Cart Area style
+=============================================
+***/ 
+#shopping-cart-area .cart-middle .apply-coupon {
+  padding-left: 0;
+  position: static;
+} 
+#shopping-cart-area .cart-middle .update-cart {
+  float: left !important;
+}    
+#shopping-cart-area .cart-middle .apply-coupon input {
+  margin: 0 0 20px;
+  position: static;
+}
+#shopping-cart-area .cart-middle .apply-coupon .apply-coupon-button button {
+  margin: 0 0 20px;
+}       
+#shopping-cart-area .sidebar-wrapper {
+  border-left: medium none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 80px;
+}    
+    
+/*** 
+=============================================
+    Shop single area style
+=============================================
+***/      
+.shop-single-area .single-products-details{
+  border-right: 0px solid #f7f7f7;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-top: 0px;    
+}    
+.product-content-box .content-box {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+
+ .shop-single-area .sidebar-wrapper {
+  padding-left: 0;
+  padding-top: 50px;
+}   
+        
+/*** 
+=============================================
+    Slogan V2 Area Style
+=============================================
+***/              
+.slogan-v2-area .slogan-v2 .text {
+  float: none;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}    
+.slogan-v2-area .slogan-v2 .button {
+  float: none !important;
+  width: 100%;
+}    
+.slogan-v2-area .slogan-v2 .button a {
+  margin: 0 auto;
+}    
+
+/*** 
+=============================================
+    Design Desc Area style
+=============================================
+***/    
+.design-desc-area .tab-manu {
+  padding-bottom: 50px;
+}    
+.design-desc-area .tab-manu .tab-manu-items .single-item {
+  margin: 0 2px 10px;
+}    
+.design-desc-area .tab-manu .tab-manu-items .single-item a {
+  padding: 13px 25px 11px;
+}    
+.design-desc-area .tab-content .inner-content .text-holder {
+  padding-top: 45px;
+}    
+            
+/*** 
+=============================================
+    Appoinment Area style
+=============================================
+***/      
+.appoinment-area .sec-title {
+  float: none !important;
+  padding-bottom: 36px;
+}    
+    
+/*** 
+=============================================
+    Pricing Table Area style
+=============================================
+***/
+.pricing-table-area {
+  padding-bottom: 60px;
+  padding-top: 100px;
+}    
+.pricing-table-area .single-price-box {
+  margin-bottom: 40px;
+}    
+    
+ 
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+        
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    
+ 
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+       
+}
+
+
+/* Only for faq page  */ 
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+.accordion-box {
+  padding: 80px 0 80px 55px;
+} 
+.faq-content-area .question-form {
+  padding: 76px 75px 100px 30px;
+}    
+ 
+    
+}
+
+
+/* Only for faq page  */ 
+@media only screen and (min-width: 320px) and (max-width: 570px) {
+.accordion-box .accordion .accord-btn {
+  height: 90px;
+}    
+.accordion-box {
+  padding: 80px 0;
+} 
+.faq-content-area .question-form {
+  padding: 70px 15px 100px;
+}
+        
+    
+}
+
