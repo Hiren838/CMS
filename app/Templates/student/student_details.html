@@ -1,8 +1,18 @@
 {% extends "layout/admin_layout.html" %}
 {% block body %}
 <div class="form-group mt-3 d-flex justify-content-center mt-3">
-    <a class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('sregister')}}">Add
-        Student</a>
+    <p class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('sregister')}}">Add
+        Student</a></p>
+        <form class="form-inline ml-auto" method="post" autocomplete="none">
+            <div class="input-group ">
+                <input class="form-control form-control-navbar" name="tag" id="tag" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-dark" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
 </div>
 <table class="table table-sm mt-2">
     <thead class="" data-widget="pushmenu">

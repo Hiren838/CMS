@@ -1,5 +1,6 @@
 import os
 import secrets
+from sqlalchemy import or_
 from PIL import Image
 from flask import render_template, flash, url_for, redirect, request, session, logging, abort
 from app.form import (ARegisterForm, ALogin, SLogin,
@@ -161,14 +162,14 @@ def saccount():
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
             current_user.image_file = picture_file
+        current_user.address = form.address.data
         current_user.email = form.email.data
-        current_user.mobile = form.mobile.data
         db.session.commit()
         flash("You account has been updated", "success")
         return redirect(url_for('saccount'))
     elif request.method == "GET":
+        form.address.data = current_user.address
         form.email.data = current_user.email
-        form.mobile.data = current_user.mobile
     image_file = url_for('static', filename = 'img/' + current_user.image_file)
     return render_template('student/saccount.html', title = 'Account', image_file = image_file, form = form)
 
@@ -249,11 +250,20 @@ def delete_student(s_id):
 
 
 # Student Details
-@app.route("/sdetails")
+@app.route("/sdetails",methods=["POST","GET"])
 @is__logged_in
 def student_details():
     page = request.args.get('page', 1, type=int)
     students = Student.query.order_by(Student.s_id.desc()).paginate(page=page, per_page=5)
+    if request.method == "POST" and 'tag' in request.form:
+        tag = request.form["tag"]
+        search = "%{}%".format(tag)
+        students = Student.query.filter(or_(Student.fname.like(search),
+                                            Student.lname.like(search),
+                                            Student.email.like(search))).paginate(error_out = False)
+        return render_template('student/student_details.html',students=students,tag=tag)
+    else:
+        "Not Found"
     return render_template("student/student_details.html", title = "Stuent-Details", students = students)
 
 #admin view
@@ -295,9 +305,15 @@ def delete_admin(a_id):
     return redirect(url_for("admin_details"))
 
 # admin details routing
-@app.route("/adetails")
+@app.route("/adetails",methods=["POST","GET"])
 @is__logged_in
 def admin_details():
     page = request.args.get('page', 1 ,type=int)
-    admins = Admin.query.paginate(per_page=5, page=page )
+    admins = Admin.query.order_by(Admin.a_id.desc()).paginate(per_page=5, page=page )
+    if request.method == "POST" and 'tag' in request.form:
+        tag = request.form["tag"]
+        search = "%{}%".format(tag)
+        admins = Admin.query.filter(or_(Admin.fname.like(search),
+                                        Admin.lname.like(search),
+                                        Admin.email.like(search))).paginate(error_out = False)
     return render_template("admin/admin_details.html", title = "Admin-Details", admins = admins)

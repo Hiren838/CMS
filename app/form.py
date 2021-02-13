@@ -94,10 +94,10 @@ class SLogin(FlaskForm):
 
 
 class UpdateAccountForm(FlaskForm):
-    mobile = IntegerField('Mobile',
-                          validators = [DataRequired()])
     email = StringField('Email',
-                        validators = [DataRequired(), Email()])
+                          validators = [DataRequired(),Email()])
+    address = TextAreaField('Address',
+                        validators = [DataRequired()])
     picture = FileField('Update Profile Picture', validators = [FileAllowed(['jpg', 'png'])])
     update = SubmitField('Update')
 

@@ -7,28 +7,30 @@
                     width="750" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
         </div>
-    {%from "layout/formhelper.html" import render_field%}
+        {%from "layout/formhelper.html" import render_field%}
         <div class="col-md-5 col-sm-6 mt-4  content-section">
             <div class="text-center mr-5 mt-5 ">
                 <h2 class="">Contact-Us </h2>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-12 form-group">
-                    {{render_field(form.name,class="form-control",placeholder="Name")}}
+            <form method="post" action="">
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        {{render_field(form.name,class="form-control",placeholder="Name")}}
+                    </div>
+                    <div class="col-md-12 form-group">
+                        {{render_field(form.email,class="form-control",placeholder="Email")}}
+                    </div>
+                    <div class="col-md-12 form-group">
+                        {{render_field(form.mobile,class="form-control",placeholder="Mobile")}}
+                    </div>
+                    <div class="col-md-12 form-group">
+                        {{render_field(form.message,class="form-control",placeholder="Message",rows="3")}}
+                    </div>
+                    <div class="col-md-12 form-group text-center">
+                        {{render_field(form.submit,class="btn btn-primary",value="Contact")}}
+                    </div>
                 </div>
-                <div class="col-md-12 form-group">
-                    {{render_field(form.email,class="form-control",placeholder="Email")}}
-                </div>
-                <div class="col-md-12 form-group">
-                    {{render_field(form.mobile,class="form-control",placeholder="Mobile")}}
-                </div>
-                <div class="col-md-12 form-group">
-                   {{render_field(form.message,class="form-control",placeholder="Message",rows="3")}}
-                </div>
-                <div class="col-md-12 form-group text-center">
-                    {{render_field(form.submit,class="btn btn-primary",value="Contact")}}
-                </div>
-            </div>
+            </form>
         </div>
 </section>
 {% endblock %}

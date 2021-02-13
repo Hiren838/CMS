@@ -1,7 +1,17 @@
 {% extends "layout/admin_layout.html" %}
 {% block body %}
-<div class="form-group container mt-3 d-flex justify-content-center mt-3">
-    <a class="text-center"><a type="submit" class="btn btn-primary text-light" href="{{url_for('aregister')}}">Add Faculty</a>
+<div class=" container mt-3 d-flex justify-content-center">
+  <p class=""><a type="submit" class="btn btn-primary text-light" href="{{url_for('aregister')}}">Add Faculty</a></p>
+  <form class="form-inline ml-auto" method="post">
+            <div class="input-group">
+                <input class="form-control form-control-navbar" name="tag" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-dark" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
 </div>
 <table class=" table-sm table mt-2">
   <thead class="" data-widget="pushmenu">
